@@ -1,0 +1,13 @@
+body {
+	margin: 0px;
+}
+body > div:nth-child(7) > div {
+	display: none;
+}
+body > div.lil-gui.allow-touch-styles.root.autoPlace.closed > div.title {
+	display: none;
+}
+
+#time {
+	color: red !important;
+}

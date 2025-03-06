@@ -1,0 +1,17 @@
+@import url("https://fw.workos.cloud/style/main.css");
+
+body {
+	margin: 0px;
+	background: linear-gradient(to top, blue, #0000c7);
+	color: white;
+}
+
+main {
+
+}
+main > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 220px;
+}
