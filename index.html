@@ -446,7 +446,7 @@
 
 			init();
 			createDown();
-			//addGTLF();
+			addGTLF();
 
 			function init() {
 
@@ -508,7 +508,7 @@
 
 				initBirds();
 
-				createText();
+				//createText();
 
 			}
 
@@ -841,13 +841,11 @@
 					scene.add(gltf.scene);
 					console.log('Modelo cargado:', gltf);
 
-					gltf.scene.scale.set(14, 14, 14); // Aumenta el tamaño al doble
-					gltf.scene.rotation.x = THREE.MathUtils.degToRad(90); // Gira 45° en el eje Y
+					gltf.scene.scale.set(14, 14, 14);
+					gltf.scene.rotation.x = THREE.MathUtils.degToRad(90);
 					gltf.scene.position.y += -40;
 
-					//gltf.scene.rotation.x = 45;// Gira 45° en el eje Y
-
-					const ambientLight = new THREE.AmbientLight(0xffffff, 2);
+					const ambientLight = new THREE.AmbientLight(0xffffff, 4);
 scene.add(ambientLight);
 
 
