@@ -7,7 +7,7 @@ body {
 }
 
 main {
-
+	display: flex;
 }
 main > div {
 	display: flex;
