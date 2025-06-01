@@ -1,0 +1,17 @@
+gyro-scope {
+	display: block;
+	height: 600px;
+	width: 600px;
+	border-radius: 2000px;
+}
+gyro-scope > * {
+	display: flex;
+	position: absolute;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50px;
+	background-color: white;
+	height: 40px;
+	width: 40px;
+	overflow: hidden;
+}

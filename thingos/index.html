@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> WorkOS: Tu empresa en un solo lugar. </title>
+    <link href="main.css" rel="stylesheet" type="text/css">
+    <link href="shell.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="gyroscope.css" rel="stylesheet" type="text/css">
+    <link href="what.css" rel="stylesheet" type="text/css">
+    <link href="controls-box.css" rel="stylesheet" type="text/css">
+	<link href="anims/gyroscope/style.css" rel="stylesheet" type="text/css">
+    <script src="filter.js">
+
+
+    </script>
+    <script src="/anims/gyroscope/script.mjs" type="module"></script>
+</head>
+
+<body>
+
+    <!-- Barra de navegación superior -->
+    <nav class="center top-bar">
+        <a class="button-opacity" onclick="window.open('https://api.whatsapp.com/send?phone=+541131016241')">
+            <icon> support_agent </icon>
+            <label> Asesoramiento </label>
+        </a>
+        <a class="button-opacity" href="calculate/">
+            <label> Calcular costo  </label>
+        </a>
+        <a>
+            <label onclick="window.open('https://account.workos.app/neworg/')">
+                Probar Beta <!-- <b>¡gratis!</b> -->
+            </label>
+        </a>
+    </nav>
+    <nav class="center top-bar dev-bar">
+        <a class="button-opacity" href="devs/" style="padding: 5px;">
+            <icon> code </icon>
+            <label> Desarrolladores </label>
+        </a>
+    </nav>
+    <main>
+
+        <!-- Cabecera -->
+        <div class="header center">
+            <img id="top-logo" src="logos/logo_anim_slide.svg">
+            <p class="slogan"> Simplifica <wbr>
+                <span style="display: inline-block"> tu empresa </span>
+            </p>
+        </div>
+
+        <div class="center" style="position: relative; overflow: hidden; max-width: none; height: 700px">
+            <div class="gradient-off">
+            </div>
+            <div class="gyros">
+                <div class="gyro-space">
+                    <gyro-scope>
+                        <div>
+                            <icon> campaign </icon>
+                        </div>
+                        <div>
+                            <icon> settings_suggest </icon>
+                        </div>
+                        <div>
+                            <icon> today </icon>
+                        </div>
+                        <div>
+                            <icon> liquor </icon>
+                        </div>
+                        <div>
+                            <icon> remove_red_eye </icon>
+                        </div>
+                        <div>
+                            <icon> point_of_sale </icon>
+                        </div>
+                        <div>
+                            <icon> timeline </icon>
+                        </div>
+                        <div>
+                            <icon> people </icon>
+                        </div>
+                        <div>
+                            <icon> local_shipping </icon>
+                        </div>
+                        <div>
+                            <icon> confirmation_number </icon>
+                        </div>
+                    </gyro-scope>
+                </div>
+
+                <div class="gyro-space">
+                    <gyro-scope angle="0.75">
+                        <div> <img src="/images/gyroscope/facebook.png"> </div>
+                        <div> <img src="/images/gyroscope/linkedin.ico"> </div>
+                        <div> <img src="/images/gyroscope/globo.png"> </div>
+                        <div> <img src="/images/gyroscope/pedidos.png"> </div>
+                        <div> <img src="/images/gyroscope/uber.webp"> </div>
+                        <div> <img src="/images/gyroscope/ml.jpg"> </div>
+                        <div> <img src="/images/gyroscope/google.png"> </div>
+                        <div> <img src="/images/gyroscope/rapi.png"> </div>
+                        <div> <img src="/images/gyroscope/tiktok.jpg"> </div>
+                        <div> <img src="/images/gyroscope/instagram.webp"> </div>
+                        <div> <img src="/images/gyroscope/bbva.jpg"> </div>
+                        <div> <img src="/images/gyroscope/wp.png"> </div>
+                    </gyro-scope>
+                </div>
+                <div class="gyro-space">
+                    <gyro-scope angle="0.75">
+
+                    </gyro-scope>
+                </div>
+                <div class="gyros-center" style="display: flex; flex-direction: column;">
+                    <h2 style="margin: 0px; font-size: 2.5em; z-index: 200; width: 350px; text-align: center">
+                        Toda la empresa
+                    </h2>
+                    <h3 style="margin: 0px; font-weight: 100; font-size: 1.5em"> en un único sistema </h3>
+                </div>
+            </div>
+
+            <div class="gradient-on">
+            </div>
+        </div>
+
+
+        <img id="backlines" src="backlines.svg">
+
+        <!-- Centraliza el control -->
+        <blockquote style="margin: 0px; margin-top: 0px; background-color: rgba(253, 253, 253, 0); color: white; padding: 0px;">
+            <h1 style="text-align: center; font-weight: 100;">
+                <b>Centraliza el control</b>
+            </h1>
+
+            <div class="control-container">
+
+                <div id="center-visuality" class="control-box">
+                    <div class="control-box-body">
+						<img src="images/center/1-central.png">
+
+						</img>
+                    </div>
+                    <div class="control-box-top">
+                        <p>
+                            Visualiza TODA la <b>información</b> <br>
+                            en un solo lugar
+                        </p>
+						<div>
+							<small>
+								<b> Conecentra y complementa </b> los datos que vienen de distintas fuentes. <br>
+								<b> Integra toda la información </b> para tener un panorama completo, aplicar inteligencia y tomar mejores decisiones.
+							</small>
+						</div>
+                    </div>
+                </div>
+
+                <div id="center-permissions" class="control-box">
+                    <div class="control-box-body">
+						<img src="images/center/2-permisos.png">
+
+						</img>
+                    </div>
+                    <div class="control-box-top">
+                        <p>
+                            Centraliza la gestión <br>
+							de los <b>permisos</b>
+                        </p>
+                    </div>
+                </div>
+
+                <div id="center-automatization" class="control-box">
+                    <div class="control-box-body">
+						<img src="images/center/3-eventos.png">
+
+						</img>
+                    </div>
+                    <div class="control-box-top">
+                        <p>
+                            <b>Automatiza</b> tareas <br>
+							entre los distintos servicios
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </blockquote>
+
+        <!-- Escalabilidad -->
+        <blockquote>
+			<h1 style="text-align:center; font-weight: 100;">
+              <b>Escalabilidad</b>
+           </h1>
+			<div style="display: block; font-size: 1.2em; line-height: 2.3em; padding: 40px; max-width: 700px;">
+				<p>
+					Escala con una facilidad sin precedentes. <br>
+				</p>
+				<p>
+
+				</p>
+			</div>
+          <div class="org-sizes">
+                <button class="org-small">
+                    <div class="org-size-icon">
+                        <div class="white-block">  </div>
+                        <div class="white-block">  </div>
+                        <div class="white-block">  </div>
+                        <div class="white-block">  </div>
+                    </div>
+                    <label> Pequeñas tiendas </label>
+                </button>
+                <button class="org-pyme">
+                    <div class="org-size-icon">
+                        <div class="white-block">  </div>
+                        <div class="white-block">  </div>
+                        <div class="white-block">  </div>
+                        <div class="white-block">  </div>
+                        <div class="white-block">  </div>
+                        <div class="white-block">  </div>
+                    </div>
+                    <label> PyMES <br> . </label>
+                </button>
+                <button class="org-big">
+                    <div class="org-size-icon">
+                        <div class="white-block">  </div>
+                        <div class="white-block">  </div>
+                        <div class="white-block">  </div>
+                        <div class="white-block">  </div>
+                        <div class="white-block">  </div>
+                        <div class="white-block">  </div>
+                        <div class="white-block">  </div>
+                        <div class="white-block">  </div>
+                        <div class="white-block">  </div>
+                        <div class="white-block">  </div>
+                        <div class="white-block">  </div>
+                        <div class="white-block">  </div>
+                    </div>
+                    <label> Grandes empresas </label>
+                </button>
+            </div>
+          <br> <br>
+          <span style="display: block; font-size: 1.2em; line-height: 2.3em; padding: 40px; max-width: 700px;">
+			  <b>WorkOS Cloud</b> es el primer sistema que
+			  acompaña a un emprendedor <b>desde que tiene una idea</b>
+			  hasta que la convierte en una <b>empresa multinacional</b>.
+			  <br> <br>
+			  Si, sin necesidad de cambiar de sistema en ningún momento.
+           </span>
+        </blockquote>
+
+        <!-- Desarrollo -->
+
+        <!-- Multitarget -->
+
+        <!-- Escalabilidad -->
+
+
+
+        <!-- Funcionalidades -->
+        <div class="funtionalities">
+            <h1 style="text-align: center; font-weight: 100; margin-top: 150px; font-size: 3em; margin-bottom: 100px;">
+                <span style="color: aqua">Un Sistema Operativo</span> <br>
+                que lo gestiona todo
+            </h1>
+            <div class="what">
+                <div class="what-box">
+                    <div class="what-main">
+                        <div class="what-icon">
+                            <icon>
+                                cloud
+                            </icon>
+                        </div>
+                        <div class="what-descript">
+                            <b>Almacena</b> toda la información.
+                        </div>
+                    </div>
+                    <div class="what-more">
+                        <p>
+                            Centraliza y hostea todos los datos que provienen de distintas fuentes.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="what-box">
+                    <div class="what-main">
+                        <div class="what-icon">
+                            <icon>
+                                vpn_key
+                            </icon>
+                        </div>
+                        <div class="what-descript">
+                            <b>Define</b> roles, usuarios y permisos.
+                            <!-- Personaliza las funciones y aplicaciones. -->
+                        </div>
+                    </div>
+                    <div class="what-more">
+                        <p>
+                            Determina los permisos de TODAS las personas a lo largo de la organización.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="what-box">
+                    <div class="what-main">
+                        <div class="what-icon">
+                            <icon>
+                                device_hub
+                            </icon>
+                        </div>
+                        <div class="what-descript">
+                            <b>Diseña</b> la estructura de la empresa y los procesos.
+                            <!-- Personaliza las funciones y aplicaciones. -->
+                        </div>
+                    </div>
+                    <div class="what-more">
+                        <p>
+                            Define las diferentes areas de la organización, los tipos de datos y el flujo de trabajo.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="what-box">
+                    <div class="what-main">
+                        <div class="what-icon">
+                            <icon>
+                                settings_suggest
+                            </icon>
+                        </div>
+                        <div class="what-descript">
+                            <b>Automatiza</b> los procesos y el flujo de trabajo.
+                            <!-- Personaliza las funciones y aplicaciones. -->
+                        </div>
+                    </div>
+                    <div class="what-more">
+                        <p>
+                            Conecta los distintos servicios de la empresa para que interactuen y aumenten la productividad.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="what-box">
+                    <div class="what-main">
+                        <div class="what-icon">
+                            <icon>
+                                today
+                            </icon>
+                        </div>
+                        <div class="what-descript">
+                            <b>Planifica</b> Objetivos, proyectos y tareas
+                        </div>
+                    </div>
+                    <div class="what-more">
+                        <p>
+                            Administra la disponibildiad de todos los recursos de manera centralizada y evalua situaciones hipotéticas para crear proyecciones ante distintos escenarios.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="what-box">
+                    <div class="what-main">
+                        <div class="what-icon">
+                            <icon>
+                                remove_red_eye
+                            </icon>
+                        </div>
+                        <div class="what-descript">
+                            <b>Controla</b> y registra todo lo que sucede
+                        </div>
+                    </div>
+                    <div class="what-more">
+                        <p>
+                            Supervisa lo que sucede en la organización en TIEMPO REAL.
+                        </p>
+                    </div>
+                </div>
+
+                <!--
+                <div class="what-box" style="display: none">
+                    <div class="what-icon">
+                        <icon>
+                            timeline
+                        </icon>
+                    </div>
+                    <div class="what-descript">
+                        <b>Analiza</b> los datos
+                    </div>
+                </div>
+				-->
+
+                <div class="what-box">
+                    <div class="what-main">
+                        <div class="what-icon">
+                            <icon>
+                                campaign
+                            </icon>
+                        </div>
+                        <div class="what-descript">
+                            <b>Comunicate</b> con empleados y clientes
+                        </div>
+                    </div>
+                    <div class="what-more">
+                        <p>
+                            Centraliza todos los canales de comunicación y mensajes de empleados y clientes.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="what-box">
+                    <div class="what-main">
+                        <div class="what-icon">
+                            <icon>
+                                settings_input_composite
+                            </icon>
+                        </div>
+                        <div class="what-descript">
+                            <b>Conéctate</b> con apps propias o de terceros
+                        </div>
+                    </div>
+                    <div class="what-more">
+                        <p>
+                            Interactua con otras aplicaciones y empresas sin salir de la plataforma. Averigua los precios de tu proveedor, coordina tu app de logística favorita o conéctate con cualquier servicio que sea de utilidad.
+                        </p>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+		<!-- DEVS -->
+		<div>
+
+		</div>
+
+		<!-- Llamado a la acción -->
+
+        <!-- Funciones -->
+        <div style="display: none">
+            <h1> Funciones de WorkOS </h1>
+            <div class="all-in-one center">
+
+                <div class="tags">
+                    <div class="tags-column">
+                        <div class="tag-data">
+                            <icon> settings </icon>
+                            <label> Diseña y automatiza los flujos de trabajo </label>
+                        </div>
+                        <div class="tag-head tag-data">
+                            <icon> settings </icon>
+                            <label> Sistema de datos </label>
+                        </div>
+                        <div class="tag-data">
+                            <icon> backup </icon>
+                            <label> Centraliza todos los datos </label>
+                        </div>
+
+                        <!--
+                    <div class="tag-data">
+                        <icon> liquor </icon>
+                        <label> Administra los recursos </label>
+                    </div>
+                    <div class="tag-data">
+                        <icon> collections_bookmark </icon>
+                        <label> Planifica objetivos, tareas y proyectos </label>
+                    </div>
+                    <div class="tag-data">
+                        <icon> account_balance </icon>
+                        <label> Cobra, paga y factura </label>
+                    </div>
+                    <div class="tag-data">
+                        <icon> insights </icon>
+                        <label> Cruza datos y genera informes </label>
+                    </div>
+                    <div class="tag-data">
+                        <icon> visibility </icon>
+                        <label> Registra y controla los movimientos </label>
+                    </div>
+                    <div class="tag-data">
+                        <icon> science </icon>
+                        <label> Evalua situaciones hipotéticas </label>
+                    </div>
+                    -->
+                        <div class="tag-data">
+                            <icon> vpn_key </icon>
+                            <label> Gestiona usuarios y permisos </label>
+                        </div>
+
+                        <!--
+                    <div class="tag-data">
+                        <icon> code </icon>
+                        <label> Desarrolla facilmente nuevas aplicaciones basadas en WorkOS® </label>
+                    </div>
+                    -->
+                        <div class="tag-data">
+                            <icon> settings_input_component </icon>
+                            <label> Conéctate con otras empresas y otras APIs </label>
+                        </div>
+                        <div class="tag-data">
+                            <icon> api </icon>
+                            <label> Crea tus propias APIs basados en OPINAR® </label>
+                        </div>
+                        <!--
+                    <div class="tag-data">
+                        <icon> campaign </icon>
+                        <label> Centraliza los canales de comunicación </label>
+                    </div>
+
+                    <div class="tag-data">
+                        <icon> code </icon>
+                        <label> Desarrolla soluciones basadas en <b>WorkOS®</b> </label>
+                    </div>
+                    <div class="tag-data">
+                        <icon> login </icon>
+                        <label> Ofrece tu propia API basada en <b>OPINAR®</b> </label>
+                    </div>
+                    <div class="tag-data">
+                        <icon> domain </icon>
+                        <label> Vincula todas tus empresas </label>
+                    </div>
+                -->
+                    </div>
+                    <div class="tags-column">
+                        <div class="tag-head tag-apps">
+                            <icon> devices </icon>
+                            <label> Aplicaciones web </label>
+                        </div>
+                        <div class="tag-apps">
+                            <icon> web </icon>
+                            <label> Utiliza aplicaciones prediseñadas </label>
+                        </div>
+                        <div class="tag-apps">
+                            <icon> web_asset </icon>
+                            <label> o crea tus propias aplicaciones </label>
+                        </div>
+                        <div class="tag-apps">
+                            <icon> brush </icon>
+                            <label> Personaliza el entorno </label>
+                        </div>
+                        <!--
+                </div>
+                <div class="tags-column">
+                -->
+                        <div class="tag-head tag-web">
+                            <icon> public </icon>
+                            <label> Servicios web </label>
+                        </div>
+                        <div class="tag-web">
+                            <icon> dns </icon>
+                            <label> Gestiona tus dominios y DNS </label>
+                        </div>
+                        <div class="tag-web">
+                            <icon> important_devices </icon>
+                            <label> Hosting web, multilenguaje, CDN </label>
+                        </div>
+                        <div class="tag-web">
+                            <icon> mail </icon>
+                            <label> Email corporativo </label>
+                        </div>
+                        <div class="tag-web">
+                            <icon> storage </icon>
+                            <label> Almacenamiento de documentos y GIT </label>
+                        </div>
+                        <div class="tag-web">
+                            <icon> https </icon>
+                            <label> Todas las conexiones cifradas con TLS </label>
+                        </div>
+                        <div class="tag-web">
+                            <icon> history_edu </icon>
+                            <label> Contratos inteligentes y firma digital </label>
+                        </div>
+                        <div class="tag-web">
+                            <icon> precision_manufacturing </icon>
+                            <label> IoT Internet de las cosas </label>
+                        </div>
+                        <div class="tag-web">
+                            <icon> security </icon>
+                            <label> VPN, Firewall y seguridad proxy </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Asistencia -->
+        <!--
+        <div class="band">
+            <h1 style="text-align: center"> Asistencia </h1>
+            <div class="center">
+
+                <div class="what">
+
+                    <div class="what-box">
+                        <div class="what-icon">
+                            <icon>
+                                support_agent
+                            </icon>
+                        </div>
+                        <div class="what-descript">
+                            <b>Asistencia</b> las 24 hs del día
+                        </div>
+                    </div>
+
+                    <div class="what-box">
+                        <div class="what-icon">
+                            <icon>
+                                contacts
+                            </icon>
+                        </div>
+                        <div class="what-descript">
+                            <b>Asesoramiento</b> personalizado para cada empresa
+                        </div>
+                    </div>
+
+                    <div class="what-box">
+                        <div class="what-icon">
+                            <icon> cloud_sync </icon>
+                        </div>
+                        <div class="what-descript">
+                            <b>Migración</b> Ayudamos en el proceso de cambio
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        -->
+
+        <!-- Migración -->
+        <!--
+        <div id="migration">
+            <div class="center" style="text-align: center">
+                <p> ¿Necesitas migrar tu empresa a un nuevo sistema? <b> <br> ¡Te asistimos en todo el proceso! </b> </p>
+                <button onclick="window.open('https://api.whatsapp.com/send?phone=+541136862882')">
+                    <icon> support_agent </icon>
+                    <span>
+                        Click aquí para pautar una reunión de asesoramiento gratuito.
+                    </span>
+                </button>
+            </div>
+        </div>
+        -->
+
+        <!--
+        <div id="migration">
+            <div class="center" style="text-align: center">
+                <icon style="font-size: 4em;"> support_agent </icon>
+                <p> Te asistimos en el proceso de migración <b> <br> Asistencia 24/7 y asesoramiento gratuito </b>
+            </div>
+        </div>
+		-->
+
+        <!-- Ventajas -->
+        <blockquote style="padding-bottom: 0px;">
+            <h1 style="text-align: center"> ¿Por qué utilizar WorkOS? </h1>
+        </blockquote>
+        <blockquote>
+            <icon> phone_iphone </icon>
+            <h2> Todo en uno </h2>
+            <p class="center">
+                <!--
+				A medida que el negocio crece es inevitable contratar nuevos servicios que te permiten crecer. No obtsnte estas adquisiciones suelen hacer más compleja la supervisión global y sin una adecuada estrategia es muy probable que la empresa termine pareciendo a un monstruo de Frankentein con . <br> <br>
+				-->
+                WorkOS Cloud conecta todas las aplicaciones y datos de tu empresa en un único sistema para que mantengas el dominio de la información, recursos y procesos de la organización. <br> <br> Ahorra tiempo encontrando lo que buscas en el momento que lo buscas.
+            </p>
+        </blockquote>
+        <blockquote>
+            <icon> psychology </icon>
+            <h2> Toma mejores decisiones </h2>
+            <p class="center">
+                Capitaliza toda la información que tengas disponible y saca su mayor potencial cruzando datos de las distintas fuentes, obteniendo una perspectiva global de la empresa, previniendo errores y detectando oportuniades.
+            </p>
+        </blockquote>
+        <blockquote>
+            <icon> flash_on </icon>
+            <h2> Automatización </h2>
+            <p class="center">
+                Las empresas que no se automatizan <br> tienen mucha desventaja frente a las que si lo hacen. <br> <br> WorkOS Cloud permite conectar los distintos servicios de tu empresa para automatizar procesos, simplificar tareas, optimizar los recursos y aumentar conciderablemente la productividad. <br>
+            </p>
+        </blockquote>
+        <blockquote>
+            <icon> cloud_done </icon>
+            <h2> Administrado </h2>
+            <p class="center">
+                WorkOS Cloud se encarga de mantener toda la infraestructura necesaria para que tu empresa funcione en la nube. <br> <br> No gastes en servidores ni en problemas de mantenimiento y <br> liberá los recursos de tu empresa para enfocarlos en lo que realmente importa: crecer.
+            </p>
+        </blockquote>
+
+		<blockquote>
+            <div class="center">
+                <icon> zoom_out_map </icon>
+                <h2>Versátil e intuitivo</h2>
+                <p>
+                    Implementa WorkOS para gestionar todas las instancias de la organización: desde el área ejecutiva hasta el nivel operativo haciendo que el manejo de cualquier servicio de la empresa sea familiar para todos y altamente intuitivo.
+					<br> <br>
+					WorkOS Cloud tiene un onboarding rápido y sus aplicaciones son tan intuitivas que no requieren casi capacitación.
+                </p>
+            </div>
+        </blockquote>
+        <blockquote>
+            <icon> phone_iphone </icon>
+            <h2> Accesibilidad </h2>
+            <p class="center">
+                Accede a todos los datos de la empresa <br> desde cualquier lugar y en cualquier momento.
+            </p>
+        </blockquote>
+
+        <!--
+		<blockquote>
+            <icon> cloud_done </icon>
+            <h2> Actualizaciones automáticas </h2>
+            <p class="center">
+                WorkOS Cloud se mantiene actualizado sin necesidad de tu intervención y de manera proactiva para que tengas acceso a las últimas funciones y tecnologías.
+            </p>
+        </blockquote>
+		-->
+        <!--
+        <blockquote>
+            <p class="center">
+                WorkOS se encarga de los detalles técnicos para que tu empresa pueda enfocarse en lo que importa.
+            </p>
+        </blockquote>
+        -->
+        <!--
+        <blockquote>
+            <icon> settings </icon>
+            <h2>Adaptable</h2>
+            <p class="center">
+                WorkOS esta preparado para dar soluciones a cualquier organización, de cualquier tamaño y cualquier rubro.
+            </p>
+        </blockquote>
+        -->
+
+
+        <blockquote>
+            <icon> build </icon>
+            <h2>Flexible y articulable</h2>
+            <p class="center">
+                Configura tu organización por completo: desde la estructura de ámbitos, roles y permisos, pasando por la estética de las interfaces, hasta el diseño de los distintos recursos, procesos y flujos de trabajo que implementan. <br> <br> Articula todos los medios necesarios para amoldar WorkOS Cloud a medida de tu empresa.
+            </p>
+        </blockquote>
+        <blockquote>
+            <icon> north_east </icon>
+            <h2>Escalable</h2>
+            <p class="center">
+                WorkOS se adapta al crecimiento de tu empresa de forma natural. <br> Añade y quita funciones cuando lo necesites.
+            </p>
+        </blockquote>
+        <blockquote>
+            <icon> volunteer_activism </icon>
+            <h2>Llave en mano</h2>
+            <p class="center">
+                Te damos acceso libre e inmediato al sistema <br>para que vos o tu equipo lo configuren por su propia cuenta cuando lo necesiten. <br> <br>
+            </p>
+        </blockquote>
+        <blockquote>
+            <icon> sync_alt </icon>
+            <h2>Interoperable</h2>
+            <p class="center">
+                Conectate con redes sociales, otras empresas y cualquier API disponible gracias a la tecnología de OPINAR. <br> <br> ¡Y permite que otras empresas se conecten a la tuya!
+            </p>
+        </blockquote>
+        <blockquote>
+            <div class="center">
+                <icon> extension </icon>
+                <h2>Abierto</h2>
+                <p>
+                    Cualquier desarrollador puede programar funciones para WorkOS sin importar que pertenza a nuestra empresa o no!
+                </p>
+            </div>
+        </blockquote>
+
+		<!--
+        <blockquote>
+            <div class="center">
+                <icon> check </icon>
+                <h2>Intuitivo</h2>
+                <p>
+                    WorkOS implementa la misma lógica para organizar todo el sistema. Cuando aprendes a gestionar un área, aprendes todas!
+                </p>
+            </div>
+        </blockquote>
+		-->
+
+
+        <blockquote>
+            <icon> verified_user </icon>
+            <h2>Privacidad y seguridad</h2>
+            <p class="center">
+                Los datos son sólo tuyos y nuestra prioridad es protegerlos. <br> Implementamos rigurosos protocolos para custodiar lo más importante que tenemos: nuestros clientes.
+            </p>
+        </blockquote>
+        <blockquote>
+            <icon> fact_check </icon>
+            <h2> Transparente </h2>
+            <p class="center">
+                Tus datos siempre estarán disponibles para tí. Si decides irte, sin importar el motivo te brindaremos toda la información almacenada para que puedas migrar a otro sistema y te esperaremos para cuando decidas volver!
+            </p>
+        </blockquote>
+        <blockquote>
+            <h2>Instantaneo</h2>
+            <p class="center">
+                WorkOS esta listo para usar.
+            </p>
+            <button id="start"> ¡Comenzá gratis! </button>
+        </blockquote>
+
+        <style>
+            #wpp {
+                position: fixed;
+                z-index: 80000;
+                background-color: green;
+                height: 60px;
+                width: 60px;
+                border-radius: 100px;
+                bottom: 50px;
+                right: 20px;
+                background: url('https://image.flaticon.com/icons/png/512/124/124034.png');
+                background-size: 100%;
+                cursor: pointer;
+            }
+
+        </style>
+        <div id="wpp" onclick="window.open('https://api.whatsapp.com/send?phone=+541136862882')">
+
+        </div>
+    </main>
+    <footer>
+        <div class="center">
+            <nav>
+                <div class="footersec">
+                    <h4> Legal </h4>
+                    <ul>
+                        <li onclick="newPage('https://legal.workos.cloud/notice')">
+                            <a href="legal/conditions.html">
+                                Aviso Legal
+                            </a>
+                        </li>
+                        <li>
+                            <a href="legal/conditions.html">
+                                Condiciones de uso
+                            </a>
+                        </li>
+                        <li onclick="newPage('https://legal.workos.cloud/copyrigth')">
+                            Copyright
+                        </li>
+                    </ul>
+                </div>
+                <div class="footersec">
+                    <h4> Contacto </h4>
+                    <ul>
+                        <li>
+                            <a href="mailto: info@workos.cloud">
+                                info@workos.cloud
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://t.me/workos">
+                                Telegram
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.messenger.com/t/workos.cloud"> Messenger
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footersec">
+                    <h4> Redes Sociales </h4>
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/workos.cloud" target="_blank"> Facebook </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/workos.cloud/" target="_blank"> Instagram </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.linkedin.com/company/workos/"> LinkedIn </a>
+                        </li>
+                        <!-- -->
+                    </ul>
+                </div>
+                <div class="footersec">
+                    <h4> Socios </h4>
+                    <ul>
+                        <li>
+                            <a> Programa Partners </a>
+                        </li>
+                        <li>
+                            <a> Educadores </a>
+                        </li>
+                        <li>
+                            <a> Inversores  </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <small style="font-weight: 100; color: #b3b5c1">
+                <b>WorkOS Cloud ® 2024</b> Todos los derechos reservados.
+            </small>
+        </div>
+    </footer>
+</body>
+
+</html>

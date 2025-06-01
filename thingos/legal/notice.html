@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <title> Aviso legal de varelatango.com </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="conditions.css">
+    <script>
+
+        window.onload = function() {
+
+            var doms = document.getElementsByTagName("insert");
+
+            for(var inx = 0; inx < doms.length; inx++) {
+
+                new request(inx);
+
+            }
+
+            function request(n) {
+
+                var d = doms[n];
+
+                var src = d.getAttribute("data");
+
+                var xhttp = new XMLHttpRequest;
+
+                xhttp.onreadystatechange = function() {
+
+                    var texto = "";
+
+                    if(xhttp.readyState != 4) {
+
+                        texto = "Cargando...";
+
+                        //doms[inx].innerHTML = texto;
+
+                    }
+
+                    else {
+
+                        switch(xhttp.status) {
+                                case 200:
+
+                                    texto = xhttp.response;
+
+
+                                break;
+                            default:
+                                texto = "A ocurrido un error desconocido."
+                        }
+
+
+
+                    }
+
+                    d.innerHTML = texto;
+
+                }
+
+                xhttp.open('GET', src, true);
+                xhttp.send();
+
+            }
+        }
+
+    </script>
+</head>
+<body>
+
+    <header>
+        <h1>
+            Aviso Legal
+        </h1>
+        <h2>
+            varelatango.com
+        </h2>
+        <p>
+            Se establece este texto a efecto de poner en conocimiento de los términos y condiciones de uso a la persona o ente que solicite acceso a los servicios y/o recursos web vinculados al dominio &[DOMAIN]&. También en el siguiente texto y enlaces se declaran los derechos y obligaciones de aquellos que  adquieran un producto o servicio mediante este sitio web.
+        </p>
+    </header>
+
+    <article>
+
+        <!-- TERMINOS Y CONDICIONES DE USO -->
+
+        <h3>
+            1. Términos y condiciones de uso
+        </h3>
+        <p>
+            Podrá encontrar los términos y condiciones de uso en la url: https://www.&[DOMAIN]&/legal/conditions
+        </p>
+        <details>
+            <summary> Ver el contenido de https://www.&[DOMAIN]&/legal/conditions </summary>
+
+            <insert data="conditions.html">
+
+            </insert>
+        </details>
+        <!-- COPYRIGHT Y DERECHOS DE AUTOR -->
+
+        <h3>
+            2. Copyright y derechos de autor.
+        </h3>
+        <p>
+            Podrá encontrar los anuncios sobre los derechos de autor de los contenidos web y recursos presentes en estos servicios en la url: https://www.&[DOMAIN]&/legal/copyright
+        </p>
+        <details>
+            <summary> Ver el contenido de https://www.&[DOMAIN]&/legal/copyright </summary>
+
+            <insert data="copyright.html">
+
+            </insert>
+        </details>
+
+        <!-- POLÍTICAS DE PRIVACIDAD -->
+
+        <h3>
+            3. Políticas de privacidad
+        </h3>
+        <p>
+            Podrá encontrar las políticas de privacidad en la url: https://www.&[DOMAIN]&/legal/privacy
+        </p>
+        <details>
+            <summary> Ver el contenido de https://www.&[DOMAIN]&/legal/privacy </summary>
+
+            <insert data="privacy.html">
+
+            </insert>
+        </details>
+
+        <!-- CONDICIONES DE CONTRATACIÓN -->
+
+        <h3>
+            4. Condiciones de contratación.
+        </h3>
+        <p>
+            Las condiciones de contratación de servicios se encuentran en la url: https://www.&[DOMAIN]&/legal/services
+        </p>
+        <details>
+            <summary> Ver el contenido de https://www.&[DOMAIN]&/legal/services </summary>
+
+            <insert data="services.html">
+
+            </insert>
+        </details>
+
+        <!-- RESPONSABLES -->
+
+        <h3>
+            5. Responsables.
+        </h3>
+        <p>
+        </p>
+
+    </article>
+
+</body>
+</html>

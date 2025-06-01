@@ -1,0 +1,18 @@
+avatar-choiser {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color: rgba(0, 0, 0, 0.2);
+	height: 100%;
+	width: 100%;
+}
+avatar-choiser iframe {
+	height: calc(100% - 40px);
+	width: calc(100% - 40px);
+	background-color: aqua;
+	border: none;
+	border-radius: 20px;
+}

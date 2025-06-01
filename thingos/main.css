@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600|Roboto:100,300,400,600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Livvic&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap');
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+:root {
+    --MAIN-COLOR: #092152;
+    --DARK-COLOR: #10395c;
+}
+html {
+    display: block;
+    justify-content: center;
+    width: 100%;
+}
+body {
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    width: 100%;
+}
+a:any-link {
+    font-style: normal;
+    text-decoration: none;
+    color: inherit;
+}
+p a:any-link {
+    color: orange;
+}
+
+icon {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+space {
+    flex: 1;
+}

@@ -1,0 +1,89 @@
+body {
+    background: linear-gradient(to top, #040436, #0000c3);
+    min-height: 100vh;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+img {
+    width: 500px;
+    padding: 20px;
+    margin-top: 100px;
+}
+h2 {
+    margin: 20px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.promos {
+    margin: 10px;
+    max-width: 700px;
+}
+
+.promo-box {
+    margin-bottom: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.73);
+    overflow: hidden;
+    color: #00005f;
+}
+
+.promo-box ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+        padding: 20px;
+}
+.promo-box ul li {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.promo-box ul li b {
+    display: flex;
+    align-items: center;
+    margin-bottom: -10px;
+}
+.promo-box ul li b icon {
+    margin-right: 10px;
+}
+
+.price-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ff9900;
+    padding: 10px;
+    font-weight: 600;
+}
+
+.quotes {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: yellow;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.best {
+    border: solid 5px #ff9900;
+}
+.best > small {
+    display: block;
+    padding: 12px;
+    font-size: 1em;
+    width: fit-content;
+    background-color: #ff9900;
+    color: white;
+    font-weight: 600;
+    border-radius: 0px 0px 10px;
+}
+.host {
+    margin-top: 10px;
+    font-weight: 1200;
+}

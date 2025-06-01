@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+	<base href="/test/">
+</head>
+<body onload="goOn()">
+
+    <boxCenter>
+
+        <intension>
+            <input id="url" placeholder="URL" onblur="loadURLprefs()">
+            <input id="meth" placeholder="METHOD", value="POST">
+        </intension>
+
+        <headers>
+        <aheader id="head1">
+            <input class="key" placeholder="FIELD" value="Content-Type">
+            <input class="value" placeholder="VALUE" value="text/html">
+            <dele> X </dele>
+        </aheader>
+        </headers>
+        <cabeceras onclick="addHead()"> Añadir Cabecera </cabeceras>
+        <textarea id="Body" cols="40" rows="5"></textarea>
+
+        <actions>
+            <enviar onclick="beautyBody()"> BEAUTY </enviar>
+            <enviar onclick="load()"> CARGAR </enviar>
+            <enviar onclick="save()"> GUARDAR </enviar>
+            <enviar id="sendbutton" onclick="check()"> ENVIAR </enviar>
+        </actions>
+	</boxCenter>
+
+        <boxCenter id="send">
+        <enviado>  </enviado>
+        </boxCenter>
+
+        <boxCenter id="responses">
+
+            <REPLY>
+                <Status class="status"> Listo para enviar </Status>
+                <resbody class="resbody"> </resbody>
+                <changes id="changes"> </changes>
+            </REPLY>
+
+        </boxCenter>
+
+
+
+</body>
+</html>

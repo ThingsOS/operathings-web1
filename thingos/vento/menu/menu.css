@@ -1,0 +1,84 @@
+menu-slide {
+
+	height: 100%;
+	background: linear-gradient(#c47f00, rgb(116, 72, 0));
+	border-radius: 0px 10px 10px 0px;
+	overflow-x: hidden;
+	transition: all 0.5s;
+	margin-left: 0px;
+	position: relative;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.24);
+}
+.menu-items {
+	width: 100%;
+}
+menu-slide ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+
+menu-slide ul li {
+	display: flex;
+	align-items: center;
+	padding: 20px;
+	font-weight: 700;
+	color: white;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+menu-slide ul li * {
+	cursor: pointer;
+}
+menu-slide ul li:hover {
+	background-color: #c47f00;
+	transition: all 0.5s;
+}
+menu-slide ul li icon {
+	margin-right: 10px;
+}
+
+#button-menu {
+	border: none;
+	position: absolute;
+	padding: 10px;
+	background-color: rgba(0, 0, 0, 0);
+	color: white;
+	color: orange;
+	border-radius: 0px 0px 10px 0px;
+	cursor: pointer;
+	z-index: 10;
+}
+#header-event {
+	display: flex;
+	background-color: rgb(255, 255, 255);
+	height: 200px;
+	width: 100%;
+}
+
+body[menu-state="close"] menu-slide {
+	position: relative;
+	-margin-left: -320px;
+	transition: all 0.5s;
+}
+menu-content {
+	display: block;
+	width: 300px;
+	transition: all 0.5s;
+	overflow-y: auto;
+}
+body[menu-state="close"] menu-content {
+	display: block;
+	overflow: hidden;
+	width: 70px;
+	transition: all 0.5s;
+}
+body[menu-state="close"] label {
+	opacity: 1;
+	transition: all 0.5s;
+}
+body[menu-state="close"] menu-content label {
+	opacity: 0;
+	transition: all 0.5s;
+}

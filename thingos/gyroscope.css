@@ -1,0 +1,81 @@
+gyro-scope {
+	height: 400px !important;
+	width: 400px !important;
+}
+gyro-scope > div {
+	height: 60px;
+	width: 60px;
+	background: linear-gradient(#000085, #030329);
+	background-attachment: fixed;
+}
+
+
+gyro-scope icon {
+	font-size: 35px;
+	color: rgba(255, 255, 255, 0.64);
+}
+
+gyro-scope img {
+	max-height: 60px;
+	width: 60px;
+	overflow: hidden;
+}
+.gyros {
+	display: grid;
+	position: absolute;
+	height: 600px;
+	width: 100%;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	overflow: hidden;
+}
+.gyros-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	grid-column: 2/2;
+	grid-row: 2/2;
+}
+.gyro-space {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	grid-column: 2/2;
+	grid-row: 2/2;
+	overflow: hidden;
+
+}
+.gyros .gyro-space:nth-child(1) gyro-scope {
+	height: 480px !important;
+	width: 480px !important;
+}
+.gyros .gyro-space:nth-child(2) gyro-scope {
+	height: 750px !important;
+	width: 750px !important;
+}
+.gyros .gyro-space:nth-child(3) gyro-scope {
+	height: 950px !important;
+	width: 950px !important;
+}
+.gradient-on {
+	display: block;
+	width: 100%;
+	height: 200px;
+	background: linear-gradient(rgba(255, 255, 255, 0), #0000b2, var(--COLOR-1));
+	z-index: 2;
+	margin-top: 70px;
+	backdrop-filter: blur(2px);
+}
+.gradient-off {
+	display: block;
+	width: 100%;
+	height: 200px;
+	background: linear-gradient(var(--COLOR-1), rgba(255, 255, 255, 0));
+	z-index: 20;
+	margin-bottom: 150px;
+	backdrop-filter: blur(2px);
+}

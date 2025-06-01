@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root {
+	--COLOR-1: orange;
+	font-family: 'Bruno Ace SC', cursive;
+	font-family: 'Quicksand', sans-serif;
+}
+
+nav {
+	padding: 20px;
+}
+button {
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	background-color: orange;
+	color: #412a00;
+}
+button icon {
+	margin-right: 10px:
+}
+.app-container h1 {
+	padding: 20px;
+	margin: 0px;
+	color: #191001;
+}

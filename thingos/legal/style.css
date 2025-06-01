@@ -1,0 +1,157 @@
+html {
+    width: 100%;
+}
+body {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+     align-items: flex-start;
+}
+main {
+    display: flex;
+    flex: 1;
+    margin-bottom: 60px;
+    margin-right: 40px;
+}
+
+/* Barra de navegación */
+.aside-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    width: 100%;
+
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.26);
+}
+.aside-header img {
+    width: 200px;
+}
+.aside-header small {
+    margin-top: 10px;
+}
+aside {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    left: 0px;
+    transition: all 0.3s;
+}
+.bar-content {
+    position: fixed;
+    box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.29);
+    height: 100%;
+    overflow-y: auto;
+}
+aside ul {
+    display: block;
+    padding: 20px;
+    margin: 0px;
+    list-style: none;
+}
+aside ul li {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+aside ul li:not(.menu-title):hover {
+    background-color: white;
+    color: var(--DARK-COLOR);
+}
+.menu-title {
+    opacity: 0.5;
+    cursor: default;
+}
+.menu-title:not(:first-child) {
+    margin-top: 20px;
+}
+
+article em, article a, artcile a:any-link {
+    font-style: normal;
+    color: orange;
+    font-weight: 600;
+}
+article a:any-link {
+    text-decoration: underline;
+    cursor: pointer;
+}
+article blockquote {
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 0px;
+    padding: 20px;
+    border-radius: 2px;
+    font-weight: 400;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.57);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* Artículos */
+header {
+    text-align: center;
+    margin-top: 60px;
+}
+header h1 {
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.49);
+}
+header h4 {
+    display: inline-block;
+    max-width: 400px;
+}
+p {
+    line-height: 30px;
+}
+h3 {
+    margin-top: 40px;
+}
+h2 {
+    margin-top: 40px;
+}
+article {
+    margin-top: 40px;
+}
+
+#b-menu {
+    display: none;
+    position: fixed;
+    border-radius: 40px;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: var(--DARK-COLOR);
+    top: 10px;
+    left: 10px;
+}
+button:focus {
+    outline: none;
+}
+
+@media (max-width: 700px) {
+    main {
+        margin: 30px;
+    }
+    aside {
+        display: block;
+        position: absolute;
+        z-index: 20;
+        left: -280px;
+    }
+    .bar-content {
+        background-color: #5800ff;
+        background-color: #1e294e;
+    }
+    #b-menu {
+        display: block;
+        z-index: 50;
+    }
+    .aside-header {
+        margin-top: 40px;
+    }
+    body[open-menu] aside {
+        left: 0px;
+        transition: all 0.3s;
+    }
+}

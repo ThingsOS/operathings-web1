@@ -1,0 +1,74 @@
+/* What */
+.what {
+    display: flex;
+    flex-direction: column;
+	width: 100%;
+}
+.what-box {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+	color: white;
+    border-radius: 2px;
+    flex: 1;
+	min-height: 400px;
+	max-width: 900px;
+	border-radius: 5px;
+	color: white;
+	width: 100%;
+}
+.what-box:nth-child(even) {
+	background-color: rgba(255, 255, 255, 0.76);
+	color: #0a0081;
+	font-weight: 600;
+}
+.what-main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+	max-width: 250px;
+	height: 250px;
+	border-radius: 100%;
+	margin: 40px;
+}
+
+.what-icon {
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+.what-icon icon {
+	color: inherit;
+    font-size: 5em;
+    border-radius: 100px;
+}
+.what-descript {
+    text-align: center;
+    padding-top: 0px;
+    font-weight: 500;
+    border-radius: 2px;
+    font-size: 0.9em;
+	line-height: 2.0em;
+	max-width: 200px;
+}
+.what-descript b {
+    display: block;
+    font-size: 1.8em;
+	padding: 10px;
+}
+.what-more {
+	display: flex;
+	flex: 1;
+}
+.what-more p {
+	padding: 40px;
+	margin: 0px;
+	max-width: 400px;
+}
+@media screen and (max-width:900px) {
+	.what-box {
+		flex-direction: column;
+	}
+}

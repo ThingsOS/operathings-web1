@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Transmisión de audio con WebSockets</title>
+</head>
+
+<body>
+	<button onclick="startStreaming()">Iniciar transmisión</button>
+	<button onclick="stopStreaming()">Detener transmisión</button>
+	<audio controls id="audioElement"></audio>
+	<script>
+		const socket = new WebSocket('wss://wss.workos.cloud:7000/audio');
+		const audioElement = document.getElementById('audioElement');
+		let mediaRecorder;
+		let chunks = [];
+
+		async function startStreaming() {
+			try {
+				const stream = await navigator.mediaDevices.getUserMedia({
+					audio: true
+				});
+				mediaRecorder = new MediaRecorder(stream);
+				log('Comienzo de grabación')
+
+				/*
+				mediaRecorder.ondataavailable = (event) => {
+
+					log('Data disponible')
+					if (event.data.size > 0) {
+						chunks.push(event.data);
+
+						const audioBlob = new Blob(chunks, {
+							type: 'audio/webm'
+						});
+						socket.send(audioBlob);
+						chunks = [];
+					}
+
+				};
+
+
+				setInterval(function(){
+					mediaRecorder.stop();
+					mediaRecorder.start();
+				}, 1000)
+
+				mediaRecorder.onstop = () => {};
+
+				*/
+
+
+
+			} catch (error) {
+				log('Error con microfono')
+				console.error('Error al acceder al micrófono:', error);
+			}
+		}
+
+		function stopStreaming() {
+			mediaRecorder.stop();
+		}
+
+		socket.onmessage = (event) => {
+			const audioBlob = event.data;
+			const audioURL = URL.createObjectURL(audioBlob);
+			audioElement.src = audioURL;
+			audioElement.play();
+		};
+
+		function log(txt) {
+
+			let p = document.createElement('p');
+			p.textContent = txt;
+
+			document.body.appendChild(p);
+
+		}
+
+	</script>
+</body>
+
+</html>

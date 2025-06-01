@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> WorkOS: Inversión </title>
+    <base href="/invest/app/anxuha9kl/">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1> INVEST </h1>
+    </header>
+
+    <main>
+
+        <p> Maximiliano Arturo Ezequiel Lescano </p>
+        <label> Cuenta total </label>
+        <div class="ammount">
+            <span> $29.000 </span>
+        </div>
+
+		<p class="adv"> El rendimiento de este mes será efectuado el día 15 de Noviembre. </p>
+
+        <label> Detalles </label>
+        <div class="details">
+            <span> Próximo cierre: <span> 5/12/22 </span> </span>
+        </div>
+        <div class="invertion-options" id="a1">
+            <p> Escoja una opción de inversión: </p>
+            <div class="invertion-opt" onclick="choose()">
+                Reinvirta $29.000 <br>
+                (Próximo rendimiento: $35.000)
+            </div>
+            <div class="invertion-opt" onclick="choose()">
+                Retira $15.000 <br>
+                (Reinvierte $14.000) <br>
+                (Próximo rendimiento: $32.500)
+            </div>
+
+            <div class="invertion-opt" onclick="choose()">
+                Retira $29.000
+            </div>
+        </div>
+        <!--
+        <div class="invertion-options" id="b2">
+            <p> Aún no posee inversiones, para comenzar puede hacer un depósito en el alias WorkOS. </p>
+        </div>
+        -->
+    </main>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1300.9528" height="226.77165" viewBox="0 0 189.31574 19.999999" version="1.1" id="svg1170">
+    <defs id="defs1164">
+        <clipPath id="mascara1" >
+            <polygon id="ab" points="14,282 10.7,292 60,291 60,281" stroke="aqua" stroke-width="0.3px" fill="white"/>
+        </clipPath>
+    </defs>
+  <metadata
+     id="metadata1167">
+      <!--
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+    -->
+      <style>
+        #logotipo {
+          fill:#ffffff;
+          z-index: 20
+        }
+      </style>
+  </metadata>
+
+  <g
+     id="logotipo"
+     transform="matrix(3.6592822,0,0,3.6592822,-6.2182069,-1040.5144)" >
+
+    <g
+       id="w"
+       transform="matrix(0.2350826,0,0,0.23353612,3.1663298,199.8746)" >
+      <path
+         id="w1"
+         d="M -2.0005759,356.74452
+            -2.0005759,356.74452
+            -4.7439883,356.72357
+            -4.7439883,356.72357 Z"
+         style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1">
+        <animate xlink:href="#w1"
+                 attributeName="d"
+                 attributeType="XML"
+                 dur="250ms"
+                 fill="freeze"
+                 repeatCount="1"
+                 calcMode="paced"
+                 values= "M -2.0005759,356.74452
+                            -2.0005759,356.74452
+                            -4.7439883,356.72357
+                            -4.7439883,356.72357 Z;
+                          M -2.0005759,356.74452
+                            10.976741,388.13523
+                            9.4636571,391.7516
+                            -4.7439883,356.72357 Z;"
+                 >
+
+        </animate>
+        </path>
+
+      <path
+         id="path4717-2-2-0-5-1-4-6-8-5-83-2-6-2-8"
+         d="m 0,0
+            0,0
+            0,0
+            0,0
+            0.0,0 z"
+         style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1">
+
+        <animate
+                 attributeName="d"
+                 attributeType="XML"
+                 begin="250ms"
+                 dur="250ms"
+                 fill="freeze"
+                 repeatCount="1"
+                 calcMode="paced"
+                 values= "m 9.2620303,387.53051
+                          -0.8941852,1.36971 1.095812,2.85138 1.5130839,-3.61637 0.622082,-2.13735 z;
+                          m 20.927887,356.74452
+                            -12.5600419,32.1557
+                            1.095812,2.85138
+                            1.5130839,-3.61637
+                            11.342058,-28.00393 z;"
+                 >
+        </animate>
+
+        </path>
+      <path
+         id="w3"
+         d="m 0,
+            0 0,
+            0 0,
+            0 0,
+            0 z"
+         style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        <animate
+                 xlink:href="#w3"
+                 attributeName="d"
+                 attributeType="XML"
+                 begin="500ms"
+                 dur="250ms"
+                 fill="freeze"
+                 repeatCount="1"
+                 calcMode="paced"
+                 values= "m 20.927887,356.74452
+                          0.0497,0.0896 -1.266176,3.3083
+                          -0.104891,0.006 z;
+                          m 20.927887,
+                        356.74452 12.907761,
+                        31.73844 -1.443529,
+                        3.26864 -12.785598,
+                        -31.60291 z;"
+                 />
+      <path
+         id="w4"
+         d="m 0,
+            0 0,
+            0 0,
+            0 0,
+            0 0,
+            0 z"
+         style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        <animate
+                 xlink:href="#w4"
+                 attributeName="d"
+                 attributeType="XML"
+                 begin="750ms"
+                 dur="250ms"
+                 fill="freeze"
+                 repeatCount="1"
+                 calcMode="paced"
+                 values= "m 31.348067,388.8645 -0.05177,0.0357 1.095822,2.85138 0.02964,-0.0502 0.03715,-0.0484 z;
+                          m 43.856348,
+            356.74452 -12.560051,
+            32.1557 1.095822,
+            2.85138 1.44353,
+            -3.26864 12.764108,
+            -31.75939 z"
+                 />
+    </g>
+    <g clip-path="url(#mascara1)">
+    <g id="resto" transform="translate(-45 0)">
+
+        <path
+           d="m 37.833088,282.98184 h -0.813764 l -4.031879,4.04012 v -4.04012 h -0.653506 v 8.104 h 0.653506 v -4.06388 l 4.401761,4.06388 h 0.8261 l -4.38943,-4.06388 z"
+           id="k" />
+        <g
+           id="g6108"
+           transform="matrix(0.24996173,0,0,0.23702067,7.1246097,162.65189)">
+          <path
+             id="path3707-6-7-4-0-9-0-1-53-6-3-0-5"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50.79999924px;line-height:1.25;font-family:'Gill Sans Light';-inkscape-font-specification:'Gill Sans Light, ';letter-spacing:0px;word-spacing:0px;fill-opacity:1;stroke:none;stroke-width:0.24970099"
+             d="m 64.117728,525.31977 c 0,-9.52995 -7.516325,-17.01776 -17.112638,-17.01776 -9.549042,0 -17.018094,7.48781 -17.018094,17.01776 0,9.52994 7.469052,17.01776 17.018094,17.01776 9.596313,0 17.112638,-7.48782 17.112638,-17.01776 z m -2.694531,0 c 0,8.26577 -6.239968,14.63527 -14.323562,14.63527 -8.083595,0 -14.418108,-6.3695 -14.418108,-14.63527 0,-8.26578 6.334513,-14.63528 14.418108,-14.63528 8.083594,0 14.323562,6.3695 14.323562,14.63528 z" />
+        </g>
+        <path
+           d="m 42.635477,282.98054 q 1.722423,0 2.865395,1.15917 1.148299,1.15918 1.148299,2.90643 0,1.74725 -1.158931,2.89511 -1.153605,1.14223 -2.913226,1.14223 -1.679918,0 -2.801626,-1.14223 -1.116374,-1.14786 -1.116374,-2.87249 0,-1.76987 1.127007,-2.92905 1.127033,-1.15917 2.849456,-1.15917 z m 0.04253,1.07435 q -1.27586,0 -2.099858,0.84818 -0.818697,0.84818 -0.818697,2.16569 0,1.27792 0.823998,2.1261 0.823998,0.84817 2.06266,0.84817 1.24399,0 2.073294,-0.86513 0.83463,-0.86515 0.83463,-2.15438 0,-1.25531 -0.83463,-2.10914 -0.829304,-0.85949 -2.041397,-0.85949 z"
+           id="o" />
+        <path
+           d="m 50.637517,287.76319 -0.892321,-0.52334 c -0.559637,-0.32993 -0.958839,-0.65417 -1.19758,-0.97271 -0.234813,-0.32235 -0.35222,-0.6921 -0.35222,-1.10925 0,-0.62572 0.223078,-1.13389 0.669238,-1.5245 0.450063,-0.3906 1.033218,-0.5859 1.749416,-0.5859 0.684904,0 1.319143,-0.0318 1.99434,-0.0376 l -0.06752,1.03099 c -0.675347,-0.0131 -1.269333,0.0305 -1.950307,0.0305 -0.383544,0 -0.698588,0.0872 -0.945157,0.26167 -0.246546,0.17066 -0.369834,0.39061 -0.369834,0.65986 0,0.23891 0.09002,0.46265 0.27004,0.67123 0.180023,0.20858 0.4716,0.42663 0.874708,0.65417 l 0.898197,0.51195 c 1.001899,0.57643 1.502845,1.31214 1.502845,2.20711 0,0.63711 -0.221126,1.15476 -0.663359,1.55295 -0.438329,0.39819 -1.009727,0.59728 -1.714194,0.59728 -0.810136,0 -1.525061,0.0211 -2.207257,0.0211 v -1.03818 c 0.701535,-0.0197 1.361894,0.0159 2.195501,0.0159 0.367906,0 0.673168,-0.0986 0.91581,-0.2958 0.246574,-0.20099 0.369859,-0.45128 0.369859,-0.75087 0,-0.48541 -0.360078,-0.94428 -1.080203,-1.3766 z"
+           id="s" />
+        <g
+           transform="matrix(0.2427147,0,0,0.23391142,3.3561085,199.49384)"
+           id="r">
+          <g
+             transform="translate(0,-1.0583333)"
+             style="fill-opacity:1"
+             id="g8405-2-8-3-2-8-7-0-3-1">
+            <g
+               aria-label="P"
+               style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill-opacity:1;stroke:none;stroke-width:0.07000434"
+               id="text4673-3-62-0-8-3-24-0-3-7-5"
+               transform="matrix(0.88694492,0,0,1,10.696894,20.419068)">
+              <path
+                 d="m 89.563566,337.5607 v 34.6456 l 2.6924,-16.2052 v 0 h 6.604 c 6.053054,0 8.477514,-4.826 8.477514,-9.2964 0,-4.9784 -2.86773,-9.144 -8.223514,-9.144 z m 2.6924,2.2352 h 4.37229 c 6.096004,0 8.035404,3.2004 8.035404,6.9596 0,3.9116 -1.66682,7.0104 -8.118426,7.0104 h -4.289268 z"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50.79999924px;line-height:4.25;font-family:'Gill Sans Light';-inkscape-font-specification:'Gill Sans Light, ';fill-opacity:1;stroke-width:0.07000434"
+                 id="path8388-9-3-7-9-7-6-0-5-2" />
+            </g>
+            <rect
+               style="opacity:1;fill-opacity:1;stroke:none;stroke-width:0.06402101;stroke-opacity:1"
+               id="rect8397-2-1-7-1-7-6-5-5-6"
+               width="2.2621024"
+               height="21.696934"
+               x="90.134842"
+               y="370.92844" />
+          </g>
+          <path
+             id="path3711-7-7-9-3-6-8-4-2-0-9-3-4"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50.79999924px;line-height:1.25;font-family:'Gill Sans Light';-inkscape-font-specification:'Gill Sans Light, ';letter-spacing:0px;word-spacing:0px;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+             d="m 92.396942,374.19343 v -17.272 h -2.6924 v 34.6456 h 2.6924 v -17.3736 l 18.135598,17.3736 h 3.4036 l -18.084798,-17.3736 c 0,0 0,0 -3.4544,0 z" />
+        </g>
+      </g>
+    </g>
+    </g>
+    <animateTransform
+        xlink:href="#resto"
+        attributeName="transform"
+        attributeType="XML"
+        type="translate"
+        from="-40 0"
+        to="0 0"
+        dur="500ms"
+        fill="freeze"
+        begin="1100ms"
+        />
+
+</svg>

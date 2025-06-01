@@ -1,0 +1,24 @@
+body {
+	margin: 0px;
+}
+.vars-form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Roboto';
+}
+.vars-form > div {
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+}
+.vars-form input {
+	margin-top: 5px;
+	border: none;
+	padding: 5px;
+	font-size: 1em;
+	background-color: black;
+	border-radius: 5px;
+	color: white;
+}

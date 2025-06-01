@@ -1,0 +1,29 @@
+@import url("https://fw.workos.app/style/main.css");
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.pass-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input {
+    border: none;
+    margin-top: 20px;
+    border-bottom: solid 5px;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+}

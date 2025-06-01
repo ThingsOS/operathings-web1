@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<link href="style.css" rel="stylesheet">
+	<script>
+		window.addEventListener('load', function() {
+			document.getElementById('check-date').textContent = (new Date()).toLocaleDateString();
+		})
+	</script>
+</head>
+<body>
+
+	<div id="check">
+
+		<div class="check-header">
+			<h1 id="ammount" contenteditable="true"> $5.500  </h1>
+			<label id="check-ok"> Transferencia enviada </label>
+			<label id="check-date"> </label>
+		</div>
+		<div class="check-data">
+			<ul>
+				<li>
+					<span> Titular </span>
+					<span> Luis Fernando, Romano </span>
+				</li>
+				<li>
+					<span> CUL </span>
+					<span> 20-30404701-2 </span>
+				</li>
+				<li>
+					<span> Transacción </span>
+					<span> 557844461 </span>
+				</li>
+				<li>
+					<span> Banco </span>
+					<span> Banco de La Provincia de Bs. As.  </span>
+				</li>
+				<li>
+					<span> CBU </span>
+					<span> 01400081603503263188869 </span>
+				</li>
+
+			</ul>
+		</div>
+
+	</div>
+
+</body>
+</html>

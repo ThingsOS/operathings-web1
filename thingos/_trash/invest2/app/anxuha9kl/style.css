@@ -1,0 +1,68 @@
+@import url("https://fw.workos.app/style/main.css");
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    color: #0053a5
+}
+main {
+    height: 100%;
+    max-width: 400px;
+    background-color: white;
+}
+main label {
+    display: block;
+    background-color: #0053a5;
+    margin-top: 20px;
+    width: 100px;
+    color: white;
+    font-size: 0.6em;
+    padding: 5px;
+    border-radius: 5px 5px 0px 0px;
+}
+.ammount, .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 0px 5px 5px 5px;
+    background-color: #0053a5;
+    color: white;
+    margin: 0px !important;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.38);
+
+}
+.ammount {
+    font-weight: 700;
+    font-size: 2em;
+}
+.details {
+    font-size: 0.8em;
+    line-height: 200%;
+}
+main > * {
+
+}
+.invertion-opt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid;
+    color: #0053a5;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+.invertion-opt:hover {
+    background-color: #0053a5;
+    color: white;
+}

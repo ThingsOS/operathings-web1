@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+</head>
+<body>
+	<button onclick="startAudioContext()"> Start </button>
+	<script>
+	const socket = new WebSocket('wss://wss.workos.cloud:7000/audio');
+
+	var audioContext;
+	function startAudioContext() {
+		audioContext = new AudioContext();
+		console.log('Contexto de audio activado')
+	}
+
+socket.onmessage = (event) => {
+  const audioData = event.data; // Datos de audio recibidos
+
+  const blob = new Blob([audioData], { type: 'audio/wav' });
+  const audioURL = URL.createObjectURL(blob);
+
+  const audioElement = document.createElement('audio');
+  audioElement.src = audioURL;
+
+  // Reproducir el audio
+  audioElement.play();
+};
+
+	</script>
+</body>
+</html>

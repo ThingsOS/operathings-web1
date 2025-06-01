@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root {
+	--COLOR-1: orange;
+	font-family: 'Bruno Ace SC', cursive;
+	font-family: 'Quicksand', sans-serif;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	height: 100%;
+	margin: 0px;
+}
+
+main {
+	display: flex;
+	background-color: #dbdbdb;
+	height: 100%;
+	width: 100%;
+}
+
+.work-area {
+	display: flex;
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+#vento-head {
+	position: absolute;
+	background-color: orange;
+	border-radius: 0px 0px 5px 5px;
+	text-align: center;
+	padding: 10px;
+	top: 0px;
+	left: calc(50% - 50px);
+	color: #ffffff;
+	text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.51);
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.28);
+	z-index: 10;
+}
+#vento-head h1 {
+	margin: 0px;
+}
+
+tab-manager {
+	width: 100%;
+	height: 100%;
+}
+tab-slide {
+	width: 100%;
+	height: 100%;
+}
+tab-slide iframe {
+	width: 100%;
+	height: calc(100% - 4px);
+}

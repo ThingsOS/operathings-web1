@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+</head>
+<body>
+	<button> Start </button>
+	<script>
+
+// Establecer conexión WebSocket
+const socket = new WebSocket('wss://wss.workos.cloud:7000/audio');
+
+// Crear contexto de audio
+var audioContext;
+
+function startAudioContext() {
+	audioContext = new AudioContext();
+	console.log('Contexto de audio activado')
+}
+
+document.body.addEventListener('click', startAudioContext);
+
+// Evento de conexión establecida
+socket.onopen = () => {
+  // La conexión se ha establecido correctamente
+	console.log('Conexión establecida');
+};
+
+// Evento de recepción de mensaje de audio
+socket.onmessage = (event) => {
+
+
+
+
+	/*
+  const audioData = event.data; // Datos de audio recibidos
+
+  // Convertir los datos de audio a Blob
+  const blob = new Blob([audioData], { type: 'audio/wav' });
+
+  // Crear un FileReader para leer el Blob
+  const reader = new FileReader();
+  reader.onload = () => {
+    const arrayBuffer = reader.result;
+
+    // Decodificar el ArrayBuffer a audio
+    audioContext.decodeAudioData(arrayBuffer, (buffer) => {
+      // Crear fuente de audio
+      const source = audioContext.createBufferSource();
+      source.buffer = buffer;
+
+      // Conectar la fuente de audio al destino de reproducción
+      source.connect(audioContext.destination);
+
+      // Reproducir el audio
+      source.start();
+    });
+  };
+  reader.readAsArrayBuffer(blob);
+*/
+
+
+/*
+
+
+socket.onmessage = (event) => {
+  const audioData = event.data; // Datos de audio recibidos
+
+  const fileReader = new FileReader();
+  fileReader.onload = () => {
+    const arrayBuffer = fileReader.result; // Convertir los datos a un ArrayBuffer
+
+    audioContext.decodeAudioData(arrayBuffer, (buffer) => {
+      	// Reproducir el audio utilizando buffer en la fuente de audio
+
+		// Crear una fuente de audio y conectarla al destino de reproducción
+    	const source = audioContext.createBufferSource();
+    	source.buffer = buffer;
+    	source.connect(audioContext.destination);
+
+    	// Reproducir el audio
+    	source.start();
+    });
+  };
+  fileReader.readAsArrayBuffer(audioData);
+	*/
+  // Decodificar los datos de audio en un buffer
+ /* audioContext.decodeAudioData(audioData, (buffer) => {
+
+  });*/
+};
+
+
+};
+
+// Evento de error de conexión
+socket.onerror = (error) => {
+  // Ha ocurrido un error en la conexión
+};
+
+// Evento de cierre de conexión
+socket.onclose = () => {
+  // La conexión se ha cerrado
+};
+
+	</script>
+</body>
+</html>

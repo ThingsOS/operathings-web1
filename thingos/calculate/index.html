@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> WorkOS: Precios </title>
+    <link href="/main.css" rel="stylesheet" type="text/css">
+    <link href="/shell.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="budge.css" rel="stylesheet" type="text/css">
+    <script type="module">
+        import { BudgetEditor } from './script.js';
+        let be = new BudgetEditor({
+            data: [
+                {
+                    title: 'Nivel básico',
+                    descript: 'El servicio básico incluye acceso a <b>todas las apps</b> disponibles en la plataforma y 1 usuario bonficado.',
+                    unitPrice: 3100,
+                },
+                {
+                    title: 'Usuarios administradores',
+                    descript: '¿Cuantos empleados utiliazaran las aplicaciones?',
+                    details: 'Los usuarios administradores son las personas de la empresa que interactuan con las aplicaciones de WorkOS. Se les brinda un usuario y contraseña para ello. Por ejemplo, los gerentes para acceder a los datos, los mozos para utilizar la comanda digital o el cajero para cargar datos a la caja diaria necesitaran ser usuarios administradores. No confundir con la cantidad de empleados: no siempre todos los empleados necesitan un usuario.',
+                    unitPrice: 450,
+                    unitType: 'usuario',
+                    unitsLabel: ['usuario', 'usuarios'],
+                    units: 3,
+                    rewardedUnits: 2
+                },
+                {
+                    title: 'Hosting web',
+                    descript: 'Servidor para tu propio sitio web. <br> ¡El servicio de base incluye un hosting sin cargo!',
+                    unitPrice: 720,
+                    unitType: 'sitio web',
+                    units: 1,
+                    unitsLabel: ['sitio', 'sitios'],
+                    rewardedUnits: 1
+                }
+            ]
+        });
+        be.on('update-total', function(totaln){
+            let t = document.getElementById('anual-total');
+            let r = Math.floor(totaln / 2) * 12;
+            t.textContent = new Intl.NumberFormat('es-ar').format(r);
+        });
+        document.getElementById('calculator').appendChild(be);
+    </script>
+</head>
+<body>
+    <nav class="center top-bar">
+        <!--
+        <a class="button-opacity">
+            <label> ¿Sos una agencia? </label>
+        </a>
+
+        <a class="button-opacity">
+            <label> Desarrolladores </label>
+        </a>
+        -->
+        <a href="/index.html" class="button-opacity">
+            <label> Servicios y características </label>
+        </a>
+		<!--
+        <a onclick="window.open('https://catalog.workos.app/')">
+            <label>  Catálogo de aplicaciones </label>
+        </a>
+        <a onclick="window.open('https://account.workos.app/neworg/')">
+            <label> Registrarme </label>
+        </a>
+		-->
+    </nav>
+    <main>
+        <section class="intro">
+            <div class="center">
+                <details>
+                    <summary>
+                        <h1> Información sobre la facturación </h1> <br>
+                        <small> Click aquí para obtener información sobre la facturación. </small>
+                    </summary>
+                    <div>
+                        <h4> <icon>  pie_chart </icon> Pago por uso </h4>
+                        <p> <b>WorkOS®</b> tiene un sistema de facturación de "pago por uso" (<i>Pay-Per-Use</i>). Esto quiere decir que el total de cada factura dependerá de los servicios que utilices y sus características. Utiliza la <a href="#calcs">calculadora de costos</a> situada más abajo para ver los valores y cuanto gastaría tu organización.  </p>
+                        <h4> <icon> cached </icon> Ciclo mensual </h4>
+                        <p> El ciclo de facturación es <b>mensual</b>, esto quiere decir que el total de cada factura se calculará con los servicios utilzados durante el último mes. </p>
+                        <h4> <icon> notifications </icon> Configurar alertas </h4>
+                        <p>Siempre tendras la libertad de visualizar cuanto vas gastando en el mes y establecer alertas o límites para tener la tranquilidad de no exceder el presupuesto. </p>
+                    </div>
+                </details>
+            </div>
+        </section>
+        <div id="calculator">
+
+        </div>
+        <div id="promo-anual" style="display: none">
+            <h4 id="anual-title"> Plan Anual <br> <big>50% de descuento</big> </h4>
+            <div id="anual-total-content">
+                <h4 id="anual-total"> 7.200 </h4>
+                <small> Por año </small>
+            </div>
+
+        </div>
+        <!--
+        <div id="promos">
+            <div class="center" onclick="window.location = 'https://mpago.la/1vCUSQz'">
+                <div id="promo-anual">
+                    <h2> Promoción prelanzamiento </h2>
+                    <p> Contrata <b>WorkOS®</b> por un año antes del <b>19 de Enero</b> y convertite en un socio fundador con un <b>50% de descuento</b> y <b>servicios personalizados</b>. </p>
+                    <span id="anual-price">
+                        $7.200
+                    </span>
+                    <small> ¡Por un año completo! </small>
+                    <small id="cuotas"> ¡3 cuotas sin interés! </small>
+
+                    <div id="promo-descript">
+                        <h4> Incluye: </h4>
+                        <ul>
+                            <li> <b>Acceso a todas las aplicaciones</b> <br> y funciones de WorkOS sin cargos adicionales por un año. <br> ¡Añadí todos los usuarios que quieras! </li>
+                            <li>
+                                <b> 50% de descuento en el diseño de tu sitio web </b> <br> Tu sitio en internet 100% personalizado por profesionales.
+                            </li>
+                            <li>
+                                <b> Asesoramiento Personalizado </b> <br> armamos una estrategia de transformación tecnológica especialmente pensada para tu empresa. <br> Te ayudamos en la migración de datos, adaptación a los procesos más adecuados y brindamos capacitación para todos los empleados necesarios.
+                            </li>
+                        </ul>
+                    </div>
+                    <button> Contratar </button>
+                </div>
+            </div>
+        </div>
+        -->
+    </main>
+</body>
+</html>

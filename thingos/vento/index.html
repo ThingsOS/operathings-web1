@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<script src="menu/menu.js" type="module"> </script>
+	<link href="https://fw.workos.app/style/main.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+	<link href="menu/menu.css" rel="stylesheet">
+	<script src="https://fw.workos.app/scripts/components/interface/slides/index.mjs" type="module"> </script>
+</head>
+<body>
+	<main>
+		<button id="button-menu" onclick="switchMenu()">
+			<icon> menu </icon>
+		</button>
+		<menu-slide>
+			<menu-content>
+				<div id="header-event">
+
+				</div>
+				<div id="menu-selector">
+
+				</div>
+				<div class="menu-items">
+					<tab-switcher link="#main-tabs">
+						<ul>
+							<li tab="inicio">
+								<icon> home </icon>
+								<label> Inicio </label>
+							</li>
+							<li tab="sites">
+								<icon> place </icon>
+								<label> Sitios </label>
+							</li>
+							<li tab="program">
+								<icon> calendar_month </icon>
+								<label> Programa </label>
+							</li>
+							<li tab="people">
+								<icon> groups </icon>
+								<label> Participantes </label>
+							</li>
+							<li tab="network">
+								<icon> hub </icon>
+								<label> Networking </label>
+							</li>
+							<li tab="live">
+								<icon> cast </icon>
+								<label> En vivo </label>
+							</li>
+							<li tab="social">
+								<icon> thumb_up </icon>
+								<label> Muro de evento </label>
+							</li>
+							<li tab="virtual">
+								<icon> view_in_ar </icon>
+								<label> Evento Virtual </label>
+							</li>
+							<li tab="checkin">
+								<icon> badge </icon>
+								<label> Check In </label>
+							</li>
+						</ul>
+					</tab-switcher>
+				</div>
+			</menu-content>
+		</menu-slide>
+		<div class="work-area">
+			<header id="vento-head">
+				<h1> Vento </h1>
+			</header>
+
+			<tab-manager id="main-tabs" onchangetab="changeTab">
+				<tab-slide tab="inicio"> INICIO </tab-slide>
+				<tab-slide tab="sites"> SITIOS </tab-slide>
+				<tab-slide tab="program">
+					<iframe src="apps/program/index.html">
+
+					</iframe>
+				</tab-slide>
+				<tab-slide tab="people"> Participantes </tab-slide>
+				<tab-slide tab="network"> Networking </tab-slide>
+				<tab-slide tab="live"> En vivo </tab-slide>
+				<tab-slide tab="social"> Muros sociales </tab-slide>
+				<tab-slide tab="virtual">
+					<iframe src="/3d/bar/index.html"> </iframe>
+				</tab-slide>
+				<tab-slide tab="checkin"> Check In </tab-slide>
+			</tab-manager>
+		</div>
+	</main>
+</body>
+</html>

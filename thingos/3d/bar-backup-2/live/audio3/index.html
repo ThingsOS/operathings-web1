@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+</head>
+
+<body>
+	<!-- HTML -->
+	<audio id="audioElement" controls></audio>
+	<button id="startButton">Iniciar transmisión de audio</button>
+		<button id="stopButton">Parar transmisión de audio</button>
+	<script type="module">
+		import io from 'https://cdn.skypack.dev/socket.io-client';
+
+      	const socket = io('https://wss.workos.cloud:7000/audio');
+
+		const constraints = {
+			audio: true,
+		};
+
+		let mediaRecorder;
+		let audioChunks = [];
+
+		navigator.mediaDevices.getUserMedia(constraints)
+			.then((stream) => {
+				const audioElement = document.getElementById('audioElement');
+				audioElement.srcObject = stream;
+
+				mediaRecorder = new MediaRecorder(stream);
+
+				mediaRecorder.ondataavailable = (e) => {
+					if (e.data.size > 0) {
+						audioChunks.push(e.data);
+					}
+				};
+
+				mediaRecorder.onstop = () => {
+					const audioBlob = new Blob(audioChunks, {
+						type: 'audio/webm'
+					});
+					audioChunks = [];
+					socket.emit('audio', audioBlob);
+				};
+			})
+			.catch((err) => {
+				console.error('Error al obtener el flujo de audio: ', err);
+			});
+
+		document.getElementById('startButton').addEventListener('click', () => {
+			mediaRecorder.start();
+		});
+
+		document.getElementById('stopButton').addEventListener('click', () => {
+			mediaRecorder.stop();
+		});
+
+		socket.on('audio', (data) => {
+			const audioElement = document.getElementById('audioElement');
+			audioElement.src = URL.createObjectURL(data);
+		});
+
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+budget-editor {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    max-width: 600px;
+}
+
+.be-title {
+    padding: 20px;
+    background-color: rgba(48, 167, 255, 0.52);
+    border-radius: 5px 5px 0px 0px;
+    font-size: 1.2em;
+    font-weight: 600;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.42);
+}
+
+budget-editor ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+budget-editor ul li {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border: solid 0.5px rgba(0, 0, 0, 0.15);
+    border-bottom: 0px;
+    background-color: rgba(48, 167, 255, 0.37);
+}
+budget-editor ul li:hover {
+    background-color: rgba(0, 0, 0, 0.33);
+}
+.concept-init {
+    display: flex;
+    flex: 1;
+}
+.concept-head {
+    flex: 1;
+}
+.concept-head h4 {
+    margin: 0px;
+    margin-bottom: 10px;
+}
+.concept-head p {
+    margin: 0px;
+    font-size: 0.8em;
+    opacity: 0.8;
+}
+.budge-units-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    margin: 10px;
+}
+.budge-units-price-value {
+
+}
+.budge-units-price-value::before {
+    content: "$"
+}
+.budge-units-price-type {
+    font-size: 0.8em;
+}
+.units-insert {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.units-insert > input {
+    width: 70px;
+    border: none;
+    font-size: 2em;
+    font-weight: 600;
+    text-align: center;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.65);
+    background-color: rgba(255, 255, 255, 0.09);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+.units-insert > input:disabled {
+    visibility: hidden;
+}
+.budge-rewarded {
+    color: #24db24;
+}
+.concept-total {
+    margin: 10px;
+    width: 80px;
+    text-align: right;
+}
+.concept-total > span {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+.concept-total > span::before {
+    content: "$";
+}
+
+.be-total-row {
+    background-color: rgba(48, 167, 255, 0.37);
+    padding: 20px;
+    text-align: end;
+    box-shadow: inset 0px 10px 10px rgba(0, 0, 0, 0.24);
+    border-radius: 0px 0px 5px 5px;
+}
+.be-total-row span {
+    display: block;
+    font-size: 1.5em;
+    font-weight: 600;
+    text-align: end;
+}
+.be-total-row span::before {
+    content: "$";
+}
+
+@media (max-width: 600px) {
+  .concept-init {
+    display: flex;
+      flex-direction: column;
+  }
+    .concept-init p {
+        display: none;
+    }
+    .budge-units-price {
+        margin: 0px;
+        width: 100%;
+        margin-top: 10px;
+        opacity: 0.5;
+    }
+}

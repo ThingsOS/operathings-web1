@@ -1,0 +1,161 @@
+html {
+    display: flex;
+}
+
+body {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    font-family: monospace;
+    background-color: #273c78;
+    flex-direction: column;
+}
+
+boxCenter {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    flex-direction: column;
+    width: 600px;
+    box-shadow: 0px 0px 15px 1px;
+    padding: 10px
+}
+
+input {
+    margin: 10px;
+    font-family: monospace;
+    font-size: 18;
+    padding: 5px;
+    flex: 1;
+}
+
+intension {
+    display: flex;
+    width: 100%;
+}
+
+#url {
+    display: flex;
+    width: 20px;
+    flex: 6;
+    font-size: 15;
+}
+
+#meth {
+    flex: auto;
+    width: 5px;
+    text-align: center;
+}
+
+headers {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+dele {
+    display: none;
+}
+
+aheader:hover dele {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    width: 20;
+    height: 38;
+    background-color: rgba(20, 40, 97, 0.6);
+    color: aliceblue;
+}
+
+aheader {
+    display: flex;
+    align-items: center;
+}
+
+cabeceras {
+    display: flex;
+    background-color: rgba(20, 40, 97, 0.6);
+    justify-content: center;
+    align-items: center;
+    width: 97%;
+    height: 30px;
+    margin-top: 10px;
+    cursor: default;
+}
+
+cabeceras:hover {
+    background-color: rgba(66, 88, 150, 0.6);
+    transition: all 1s;
+}
+
+textarea {
+    display: flex;
+    width: 97%;
+    flex: auto;
+    height: 120px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: auto;
+}
+
+enviar {
+    display: flex;
+    height: 30px;
+    width: 90px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #142861;
+    color: antiquewhite;
+    font-family: monospace;
+    cursor: default;
+    margin-bottom: 10px;
+}
+
+#sendbutton {
+    margin-left: 170
+}
+
+enviar:hover {
+    background-color: rgb(50, 69, 123);
+}
+
+#send {
+    align-items: flex-start;
+    box-shadow: 0 0;
+    background-color: rgba(20, 40, 97, 0.6);
+}
+
+#responses {
+    align-items: flex-start;
+    box-shadow: 0px 0px 0px 0px;
+    background-color: #dbc2a0
+}
+
+REPLY {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+Status {
+
+    align-self: flex-start
+}
+
+resbody {
+    padding: 10px;
+}
+
+actions {
+    display: flex;
+    width: 100%;
+}
+
+actions * {
+    margin: 10px;
+    margin-top: 20px;
+}

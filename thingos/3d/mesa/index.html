@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Visor WebGL con Three.js</title>
+  <style>
+    #container {
+      width: 100%;
+      height: 400px;
+    }
+  </style>
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+	<div id="container"></div>
+
+	<div class="vars-form">
+		<div>
+			<label for="widthInput">Ancho del mesa:</label>
+			<input type="number" id="widthInput" min="1" value="1">
+		</div>
+		<div>
+			<label for="yInput">Largo del mesa:</label>
+			<input type="number" id="yInput" min="1" value="1">
+		</div>
+
+		<div>
+			<label for="zInput">Alto del mesa:</label>
+			<input type="number" id="zInput" min="1" value="1">
+		</div>
+
+		<div>
+			<label for="priceInput">Precio total:</label>
+			<input type="number" id="priceInput" min="1" value="1">
+		</div>
+	</div>
+
+
+  <script src="app.js" type="module"></script>
+</body>
+</html>
